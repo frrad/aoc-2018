@@ -26,8 +26,6 @@ with open('input-3.txt', 'r') as f:
 fab = dict()
 
 for datum in data:
-    print datum
-    print parse(datum)
     [idint, x, y, xsize, ysize] = parse(datum)
     increment(fab, x, y, xsize, ysize)
 
